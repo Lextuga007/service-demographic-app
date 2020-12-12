@@ -9,4 +9,8 @@ An app to compare local data with public demographic data.
 The local data used in this app has been generated from random sequencing. However, for ethnicity_detail the probability frequency was set by previously randomised health data. This gives a more realistic breakdown of ethnicity groups. 
 
 
+ONS links:
 
+https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/adhocs/008781populationdenominatorsbybroadethnicgroupandforwhitebritishlocalauthoritiesinenglandandwales2011to2017/ladenominators2017.xls
+
+https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/adhocs/006134birthsbyethnicitysexregionandimdquintilebyfinancialyear2007to2013/finalfile.xls
