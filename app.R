@@ -62,10 +62,9 @@ ui <- fluidPage(
     conditionalPanel(condition = "input.ethnicityComparisonChoice != 'Public'",
                      uiOutput("financialYearInputComp")),
     
-    # 10.1.1
+    # 10.2.1
     conditionalPanel(condition = "input.ethnicityComparisonChoice != 'Public'",
                      uiOutput("genderInputComp")),
-    
     
     # 9.2.1
     conditionalPanel(condition = "input.ethnicityComparisonChoice != 'Public'",
@@ -216,7 +215,7 @@ server <- function(input, output){
   output$genderInput <- renderUI({
     
     selectInput("gender",
-                "Select Gender",
+                "Select Sex",
                 choices = genderList,
                 multiple = TRUE)
     
@@ -292,7 +291,7 @@ server <- function(input, output){
   output$genderInputComp <- renderUI({
     
     selectInput("genderComp",
-                "Select Gender (Local data)",
+                "Select Sex (Local data)",
                 choices = genderList,
                 multiple = TRUE)
     
@@ -304,7 +303,7 @@ server <- function(input, output){
   output$genderPublicInputComp <- renderUI({
     
     selectInput("genderPublic",
-                "Select Gender (public)",
+                "Select Sex (public)",
                 choices = genderPublicList,
                 multiple = TRUE)
     
@@ -561,7 +560,7 @@ server <- function(input, output){
       
       ggplot(ethnicityEstimates, aes(x = age, y = Totals)) +
         geom_bar(stat = "identity", position = "dodge") +
-        labs(title = "Female Ethnicity Population Estimate by age and Local Authority 2017, Source: ONS",
+        labs(title = "Ethnicity Population Estimate by age and Local Authority 2017, Source: ONS",
              y = "mid year population estimated age 2017",
              x = "Population numbers") +
         theme(panel.grid.major = element_blank(),

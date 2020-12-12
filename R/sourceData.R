@@ -180,6 +180,6 @@ imdGroupFunction <- function(object, colName, maxLimit){
     count(n = n_distinct(row_id)) %>% 
     ungroup() %>% 
     rename(IMD = 1) %>% 
-    complete(IMD = seq(0, maxLimit, 1))
+    complete(IMD = seq(1, maxLimit, 1))
   
 }
